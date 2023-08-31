@@ -10,7 +10,7 @@ const handleUserInput = function (key) {
   }
 
   if (key === "w") {
-     //conn.write("Move: up");  
+       
       connection.write("Move: up");
   }
   if (key === "a") {
@@ -21,6 +21,12 @@ const handleUserInput = function (key) {
   }
   if (key === "d") {
     connection.write("Move: right");
+  }
+  if (key === "r") {
+    connection.write("Say: Hi!")
+  }
+  if (key === "t") {
+    connection.write("Say: Yay")
   }
 
 };
