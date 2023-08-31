@@ -3,5 +3,8 @@ const setupInput = require("./input");
 
 
 console.log("Connecting ...");
-connect();   // establishes a connection with the game server
-setupInput();
+   
+let conn = connect()  // establishes a connection with the game server
+
+setupInput(conn);
+
